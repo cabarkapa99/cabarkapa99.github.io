@@ -1,0 +1,13 @@
+**** UPUTSTVO *****
+ 1. Otvoriti dvoklikom fajl index.html
+ 2. Trebalo bi da se otvori web stranica u pregledacu
+ 3. Trebalo bi da vidite 2 dugmeta za dodavanje fajlova
+ 4. Prvo dugme s leve strane je za dodavanje slike, prvo treba dodati sliku za pozadinu
+ 5. Drugo dugme s leve strane je za dodavanje excel dokumenta, nakon slike treba dodati excel fajl
+ 6. Nakon dodavanja oba fajla trebalo bi da se pojavi pregled i komande za podesavanje izgleda cene
+ 7. U gornjem desnom uglu trebalo bi da se pojavi dugme Preview
+ 8. Kada zavrsite s podesavanjem izgleda cene, pritisnite dugme preview
+ 9. Trebalo bi da se otvori prozor sa prikazom cena iz excel fajla
+ 10. Ako zelite da stampate cene u gornjem desnom uglu pregledaca treba otici na opcije i odabrati opciju print
+ 11. Otvorice se print prozor za stampanje s pregledom izgleda cena, treba iskljuciti margine i stampanje headera i footera, ako ste zadovoljni izgledom izaberite save as pdf i zatim save dugme
+ 12. PDF fajl sa cenama bi trebalo da bude sacuvan na vasem kompjuteru, a kasnije ga mozete odstampati 

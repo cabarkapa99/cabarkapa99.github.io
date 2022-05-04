@@ -1,0 +1,249 @@
+html{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+body{
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden; 
+}
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: black;
+    height: 50px;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+nav h1{
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+    margin: 0;
+}
+#container{
+    height: calc(100% - 110px);
+    position: relative;
+    top: 60px;
+}
+#imgSelect{
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    width: 50%;
+    height: 30px;
+    padding-left: 20px;
+}
+#imgSelect label{
+    margin-right: 20px;
+}
+#imgSelect input{
+    border: none;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}
+#greska{
+    border: 2px solid red;
+    color: red;
+    display: none;
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 5px 10px 5px 10px;
+}
+#excelSelect{
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    width: 50%;
+    height: 30px;
+    padding-right: 20px;
+}
+#excelSelect label{
+    margin-right: 20px;
+}
+#excelSelect input{
+    border: none;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}
+#ExcelGreska{
+    border: 2px solid red;
+    color: red;
+    display: none;
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 5px 10px 5px 10px;
+}
+#imgContainer{
+    height: fit-content;
+    width: fit-content;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    margin-top: 50px;
+    margin-left: 20px;
+    border: 1px solid black;
+}
+#dataContainer{
+    position: absolute;
+    right: 0;
+    top: 100px;
+    height: fit-content;
+    width: calc(100% - 700px);
+    margin-top: 50px; 
+}
+.pic{
+    width: 792px;
+    height: 567px;
+}
+.polje{
+    /* white-space: nowrap; */
+    width: fit-content;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+#korakInput{
+    margin-left: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    position: absolute;
+    right: 20px;
+}
+#korakLabel{
+    position: absolute;
+    right: 250px;
+}
+.ctrlPolje{
+    width: fit-content;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    margin-top: 50px;
+    float: right;
+}
+.ctrlPolje span{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 24px;
+}
+#previewBtn{
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    display: none;
+}
+#preview{
+    height: 100%;
+    width: 815px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, 0);
+    border: 1px solid gray;
+    display: none;
+    overflow-y: scroll;
+}
+.previewImgContainer{
+    width: 7cm;
+    height: 5cm;
+    border: 1px solid black;
+    display: inline-block;
+    position: relative;
+}
+.previewImgContainer .pic{
+    width: 100%;
+    height: 100%;
+}
+.previewImgContainer .polje{
+    font-size: 30%;
+
+}
+#close{
+    position: absolute;
+    right: 50px;
+    top: 80px;
+    display: none;
+    font-size: 40px;
+}
+#export{
+    display: none;
+    position: absolute;
+    right: 50px;
+    top: 40px;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    height: 40px;
+    background-color: black;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+@media print {
+    nav{
+        display: none;
+    }
+    #imgSelect{
+        display: none;
+    }
+    #excelSelect{
+        display: none;
+    }
+    #imgContainer{
+        display: none;
+    }
+    .previewImgContainer{
+        width: 7cm;
+        height: 5cm;
+        border: 1px solid black;
+    }
+    .pic{
+        width: 100%;
+        height: 100%;
+    }
+    #dataContainer{
+        display: none;
+    }
+    #close{
+        display: none;
+    }
+    .polje{
+        font-size: 30%;
+    }
+    footer{
+        display: none;
+    }
+    #preview{
+        display: block;
+        height: fit-content;
+        width: 800px;
+    }
+    #preview::-webkit-scrollbar{
+        display: none;
+    }
+    #preview::-webkit-scrollbar-thumb{
+        display: none;
+    }
+    body{
+        overflow-y: scroll;
+    }
+    html{
+        overflow-y: scroll;
+    }
+}
