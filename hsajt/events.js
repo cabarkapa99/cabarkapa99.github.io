@@ -58,7 +58,7 @@ const napraviDogadjaj = function(dogadjaj){
 
 //dohvatamo dogadjaje iz json fajla na serveru
 const getEvents = async function(){
-    let res = await fetch('https://github.com/cabarkapa99/cabarkapa99.github.io/blob/main/hsajt/files/events.json');
+    let res = await fetch('https://raw.githubusercontent.com/cabarkapa99/cabarkapa99.github.io/main/hsajt/files/events.json');
     let data = await res.json();
     return data;
 }
