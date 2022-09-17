@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+
+    <style>
+        @font-face{
+            font-family: 'Pisana srednja';
+            src: url('./Pisana_Srednja/Pisana\ Srednja.otf');
+        }
+        @font-face{
+            font-family: 'Anabel';
+            src: url('./BDS\ Annabelle\(1\)/BDS Annabelle v2.ttf');
+        }
+        h1{
+            /* font-family: 'Pacifico', cursive; */
+            font-family: 'Pisana srednja';
+            text-align: center;
+            color: #A08050;
+            letter-spacing: 2px;
+            margin-bottom: 50px;
+            margin-top: 10px;
+            font-size: 50px;
+            /* font-weight: 550; */
+        }
+        p{
+            color: #A08050;
+            /* font-family: serif; */
+            font-family: 'Pisana srednja';
+            font-size: 30px;
+            text-align: center;
+            width: 500px;
+            margin: 20px auto;
+            font-weight: bold;
+
+            z-index: 3;
+        }
+        p span{
+            font-size: 34px;
+            border-bottom: 2px solid #A08050;
+        }
+        #burme{
+            width: 200px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 90%;
+        }
+        #container{
+            position: relative;
+            width: 640px;
+            height: 800px;
+            /* height: fit-content; */
+            border: 2px solid #A08050;
+            z-index: 3;
+            background-color: white;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #background{
+            background-image: url('./p-removebg-preview.png');
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 60%;
+        }
+        #bordura{
+            background-image: url('./p2-removebg-preview.png');
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 100%;
+            height: 220px;
+            background-position: top;
+            background-size: cover;
+            opacity: 0.3;
+        }
+        #wrapper{
+            position: relative;
+            z-index: 5;
+        }
+        #doleDesno{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        #doleDesno img{
+            transform: scaleX(-1);
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        #doleLevo{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        #goreDesno{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        #goreDesno img{
+            transform: scaleY(-1);
+            transform: rotate(-180deg);
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        #goreLevo{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        #goreLevo img{
+            transform: rotate(-180deg);
+            transform: scaleY(-1);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        #doleLevo img{
+            /* transform: scaleX(-1); */
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        .corner{
+            width: 150px;
+            height: 150px;
+            filter: invert(48%) sepia(41%) saturate(429%) hue-rotate(357deg) brightness(99%) contrast(89%);
+
+            /* filter: brightness(0) invert(1); */
+        }
+
+
+        @media screen and (max-width: 650px){
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            html{
+                width: 100%;
+            }
+            body{
+                width: 100%;
+                overflow-x: hidden;
+ 
+            }
+            #container{
+                position: relative;
+                top: 0;
+                left: 0;
+                transform: translate(0, 0);
+
+                width: 100%;
+                height: fit-content;
+                padding: 50px 10px;
+
+                box-sizing: border-box;
+            }
+            p{
+                width: 100%;
+                font-weight: 550;
+            }
+            h1{
+                font-weight: 600;
+            }
+            #bordura{
+                height: 400px;
+                background-position: center;
+                top: 60%;
+            }
+        }
+        @media screen and (max-width: 375px) {
+            #container{
+                padding: 70px 5px;
+                box-sizing: border-box;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="corner" id="goreLevo"><img class="corner" src="./golden-ornamental-corner-curly-vines-with-flowers-vintage-style_53562-14670-removebg-preview.png"></div>
+        <div class="corner" id="goreDesno"><img class="corner" src="./golden-ornamental-corner-curly-vines-with-flowers-vintage-style_53562-14670-removebg-preview.png"></div>
+        <div class="corner" id="doleLevo"><img class="corner" src="./golden-ornamental-corner-curly-vines-with-flowers-vintage-style_53562-14670-removebg-preview.png"></div>
+        <div class="corner" id="doleDesno"><img class="corner" src="./golden-ornamental-corner-curly-vines-with-flowers-vintage-style_53562-14670-removebg-preview.png"></div>
+
+        <div id="wrapper">
+            <img id="burme" src="./burme-removebg-preview.png">
+            <h1>Милутин  и  Дијана</h1>
+            <p>Позивамо Вас да својим присуством увеличате прославу нашег венчања, у недељу <span>09.10.2022.</span> У Београду</p>
+            <p>Црквено венчање ће се одржати у<br>Храму Покрова Пресвете Богородице<br>у Београду у <span>15 часова</span>.</p>
+            <p>Прослава ће се одржати у ресорану Амфора<br>на Новом Београду од <span>16:30 часова</span></p>
+            <p>Добро дошли!<br>Породице<br>Јоцић и Цветковић</p>
+        </div>
+        <div id="bordura"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+
+    <style>
+        h1{
+            font-family: 'Pacifico', cursive;
+            text-align: center;
+            color: #A08050;
+            letter-spacing: 5px;
+            margin-bottom: 50px;
+        }
+        p{
+            color: #A08050;
+            font-family: serif;
+            text-align: center;
+            width: 500px;
+            margin: 20px auto;
+            font-weight: bold;
+
+            z-index: 3;
+        }
+        img:last-child{
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: -40px;
+            opacity: 70%;
+            width: 400px;
+        }
+        img:first-child{
+            width: 200px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 90%;
+        }
+        #container{
+            position: relative;
+            width: 640px;
+            height: 700px;
+            /* height: fit-content; */
+            border: 5px solid #A08050;
+            z-index: 3;
+        }
+        #background{
+            background-image: url('./p-removebg-preview.png');
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 60%;
+        }
+        #bordura{
+            background-image: url('./p2-removebg-preview.png');
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            opacity: 0.3;
+        }
+        #wrapper{
+            position: relative;
+            z-index: 5;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <!-- <div id="background"></div> -->
+        <div id="wrapper">
+            <img src="./burme-removebg-preview.png">
+            <h1>МИЛУТИН  И  ДИЈАНА</h1>
+            <p>Позивамо Вас да својим присуством увеличате прославу нашег венчања, у недељу 09.10.2022. У Београду</p>
+            <p>Црквено венчање ће се одржати у<br>Храму Покрова Пресвете Богородице<br>у Београду у 15 часова.</p>
+            <p>Прослава ће се одржати у ресорану Амфора<br>на Новом Београду од 16:30 часова</p>
+            <p>Добро дошли!<br>Породице<br>Јоцић и Цветковић</p>
+        </div>
+        <div id="bordura"></div>
+        <!-- <img src="./p2-removebg-preview.png"> -->
+    </div>
+</body>
+</html>
