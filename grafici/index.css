@@ -7,6 +7,7 @@ body{
 }
 .anketa{
     width: 750px;
+    max-width:100%
     margin: 100px auto;
     padding: 20px 10px;
     border-radius: 10px;
