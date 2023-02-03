@@ -86,7 +86,7 @@ function sendData(){
     const modal = document.querySelector('.cover-modal');
 
     btn.addEventListener('click', ()=>{
-        btn.disabled="true";
+        btn.disabled=true;
         console.log('pera');
         db.collection("form-results").doc().set({
             points: givenPoints
