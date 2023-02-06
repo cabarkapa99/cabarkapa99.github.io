@@ -1,6 +1,6 @@
 
 const getProjects = async function(){
-    let res = await fetch("http://127.0.0.1:5500//pitanja.json");
+    let res = await fetch("https://cabarkapa99.github.io/urosAnketa2/pitanja.json");
     let data = await res.json();
     return data;
 }
