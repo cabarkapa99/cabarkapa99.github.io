@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politika privatnosti</title>
+    <link href="index.css" type="text/css" rel="stylesheet">
+    <style>
+        body{
+            background-color: var(--beige);
+        }
+        h1,h2{
+            font-family: 'Playfair Display', serif;
+        }
+        h1{
+            font-size: 36px;
+            text-align: center;
+            margin: 50px 0;
+        }
+        h2{
+            font-size: 24px;
+            text-align: center;
+            margin: 20px 0;
+            font-weight: 300;
+        }
+        .privacy-policy-paragraph{
+            width: min(80%, 800px);
+            margin: 20px auto;
+        }
+        .privacy-policy-paragraph p{
+            text-align: justify;
+        }
+        .privacy-policy-paragraph:last-child h2{
+            margin-top: 70px;
+        }
+        .higlight{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Politika privatnosti</h1>
+    <div class="privacy-policy-text">
+        <div class="privacy-policy-paragraph">
+            <p>Hvala što posećujete naš veb sajt.
+                U skladu s našim opredeljenjem za zaštitu privatnosti,
+                želimo da budete informisani o tome kako prikupljamo,
+                koristimo i čuvamo podatke o vama prilikom korišćenja našeg veb sajta.
+            </p>
+        </div>
+        <div class="privacy-policy-paragraph">
+            <h2>Prikupljanje ličnih podataka</h2>
+            <p>Mi <span class="higlight">ne prikupljamo</span> nikakve lične podatke o vama tokom vaše posete našem veb sajtu.
+                Možete pregledati naše stranice i pristupiti svim informacijama bez otkrivanja vašeg identiteta.
+            </p>
+        </div>
+        <div class="privacy-policy-paragraph">
+            <h2>Kontaktiranje putem e-pošte</h2>
+            <p>
+                Ukoliko nam se obratite putem e-pošte, prikupljamo vaše ime i e-poštu kako bismo mogli da odgovorimo na vašu poruku.
+                Ove informacije koristimo isključivo za svrhe komunikacije s vama i nećemo ih deliti niti prodavati trećim stranama bez vašeg pristanka, osim u slučajevima kada nam je to zakonska obaveza.
+            </p>
+        </div>
+        <div class="privacy-policy-paragraph">
+            <h2>Kolačići i tehnologije praćenja</h2>
+            <p>
+                Naš veb sajt <span class="higlight">ne koristi</span> kolačiće (cookies) ili druge tehnologije praćenja kako bi prikupljao informacije o vašem korišćenju.
+                <span class="higlight">Nećemo</span> pratiti vaše aktivnosti na našem veb sajtu niti koristiti bilo kakve analitičke alate koji prikupljaju podatke o vama.
+            </p>
+        </div>
+        <div class="privacy-policy-paragraph">
+            <h2>Upitnik informativnog karaktera</h2>
+            <p>
+                Na našem veb sajtu možete pronaći upitnik <span class="higlight">informativnog</span> karaktera koji ima svrhu da vam pomogne pri odabiru terapeuta.
+                Važno je naglasiti da rezultati upitnika nisu proverena informacija od strane stručnjaka.
+                Oni se dobijaju na osnovu odgovora koje pružite i koriste se samo za informativne svrhe kako bismo vam pružili preporuke u skladu sa vašim datim odgovorima.
+                Ovi rezultati i odgovori <span class="higlight">neće</span> biti sačuvani niti povezani sa vašim identitetom.
+            </p>
+        </div>
+        <div class="privacy-policy-paragraph">
+            <h2>Veze ka drugim sajtovima</h2>
+            <p>
+                Naš veb sajt može sadržati veze ka drugim spoljnim veb sajtovima koje smatramo relevantnim i korisnim.
+                Međutim, kada kliknete na takvu vezu, napuštate naš domen i više ne podležete ovoj politici privatnosti.
+                Savetujemo vam da pročitate politiku privatnosti svakog veb sajta koji posećujete.
+            </p>
+        </div>
+        <div class="privacy-policy-paragraph">
+            <h2>Bezbednost podataka</h2>
+            <p>
+                Važno nam je da zaštitimo podatke o vama.
+                Preduzimamo odgovarajuće tehničke i organizacione mere kako bismo obezbedili sigurnost podataka koje prikupljamo putem e-pošte.
+            </p>
+        </div>
+        <div class="privacy-policy-paragraph">
+            <h2>Vaša prava</h2>
+            <p>
+                Imate pravo da zatražite pristup, ispravku, brisanje ili ograničavanje obrade podataka o vama koje smo prikupili putem e-pošte.
+                Takođe imate pravo da se suprotstavite obradi podataka ili zatražite prenos podataka trećoj strani.
+                Ako želite da ostvarite ova prava, molimo vas da nas kontaktirate putem e-pošte.
+            </p>
+        </div>
+        <div class="privacy-policy-paragraph">
+            <h2>Izmene politike privatnosti</h2>
+            <p>Ova politika privatnosti može biti ažurirana s vremena na vreme.
+                Svaka izmena će biti objavljena na ovoj stranici, stoga vas podstičemo da je redovno posećujete kako biste bili blagovremeno informisani o svim ažuriranjima naše politike privatnosti.
+                Ako imate bilo kakva pitanja u vezi sa našom politikom privatnosti, slobodno nas kontaktirajte putem e-pošte. Hvala vam što ste posetili naš veb sajt.
+            </p>
+        </div>
+        <div class="privacy-policy-paragraph">
+            <h2>Datum poslednje izmene: [Unesite datum]</h2>
+        </div>
+    </div>
+    <script>
+        const izmena = document.querySelector(".privacy-policy-paragraph:last-child h2");
+        const datum = "1. "+ (new Date().getMonth() + 1) +". "+ new Date().getFullYear() +".";
+        izmena.innerText = izmena.innerText.replace("[Unesite datum]", datum);
+    </script>
+</body>
+</html>

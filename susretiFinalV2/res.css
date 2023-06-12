@@ -1,0 +1,714 @@
+@media screen and (max-width: 1023px) {
+    :root{
+        --transitionTime: 0.4s;
+    }
+    #hamburger{
+        display: block;
+    }
+    nav{
+        padding: 0;
+    }
+    nav{
+        display: block;
+    }
+    nav ul{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        right: 0;
+        top: 100px;
+        transform: translateY(0);
+        background-color: inherit;
+        background-image: linear-gradient(to right, rgba(245, 243, 245, 0.1), rgba(245, 243, 245, 0.1));
+        padding: 10px 0;
+        position: absolute;
+    }
+    nav ul li{
+        display: block;
+        text-align: center;
+    }
+    .logo{
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translateY(-50%);
+    }
+    .logo-big{
+        display: none;
+    }
+    .logo-small{
+        display: block!important;
+        height: 64px;
+        /* width: 64px; */
+
+    }
+    .logo-small img{
+        width: 100%;
+        height: 100%;
+    }
+    #hero header h1{
+        font-size: 10vw;
+        /* font-weight: 400; */
+    }
+    #hero header h3{
+        font-size: 5vw;
+    }
+    #hero header button{
+        padding: 7px 10px;
+        margin-top: 40px;
+    }
+
+    #ko-smo-mi{
+        height: fit-content;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 10px;
+    }
+    #ko-smo-mi #text-wrapper{
+        position: static;
+        padding: 0;
+    }
+    #ko-smo-mi #text-wrapper p{
+        width: 100%;
+
+    }
+    #about-picture{
+        position: static;
+        margin-top: 40px;
+        width: 100%;
+        height: 50vw;
+    }
+    #about-picture img{
+        width: 100%;
+        height: auto;
+        /* box-shadow: none; */
+    }
+    #key-words h3{
+        font-size: 6vw;
+    }
+    .key-words-wrapper{
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .key-word{
+        box-sizing: border-box;
+        padding: 10px 10px;
+        height: 45vw;
+    }
+    #savet{
+        box-sizing: border-box;
+        padding: 0 10px;
+    }
+    #savet p{
+        width: 100%;
+
+    }
+    #savet ul{
+        width: 100%;
+    }
+    #about ul li{
+        margin-top: 20px;
+        font-size: 1.1em;
+        line-height: 1.2em;
+    }
+    #team{
+        margin-top: 100px;
+        padding: 50px 10px;
+        box-sizing: border-box;
+    }
+    #team .sub-heading{
+        margin-bottom: 100px;
+    }
+    #team .team-member{
+        height: fit-content;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    .team-member-image-wrapper{
+        /* position: static; */
+        width: 100%;
+        height: fit-content;
+    }
+    .team-member-image-wrapper img{
+        height: auto;
+        width: 100%;
+    }
+    .team-member-biography-wrapper{
+        width: 100%;
+        /* position: static; */
+        height: fit-content;
+        align-items: center!important;
+    }
+    .team-member-biography-text{
+        width: 100%;
+        font-size: 1.2em;
+        line-height: 1.4em;
+        display: none;
+    }
+    .contact-info{
+        /* position: static; */
+        text-align: center!important;
+        font-size: 1.1em;
+        box-sizing: border-box;
+        /* padding: 15px 5px; */
+        align-items: center!important;
+    }
+    .team-member-image-wrapper:hover .contact-info{
+        display: none;
+    }
+    button.contact-therapist{
+        display: none;
+    }
+    a.contact-therapist{
+        text-decoration: none;
+    }
+    #survey-wrapper{
+        width: 90%;
+        height: fit-content;
+        box-sizing: border-box;
+        padding: 30px 10px;
+    }
+    .survey-question{
+        height: 100%;
+    }
+    .survey-question .survey-question-answers{
+        gap: 10px;
+    }
+    .survey-question .survey-question-answers div{
+        gap: 10px;
+    }
+    .survey-answer h3{
+        margin-bottom: 40px;
+    }
+    #faq-wrapper{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 10px;
+    }
+    .faq-question-answer-wrapper{
+        margin-bottom: 20px;
+    }
+    .faq-question p{
+        font-size: 1em;
+    }
+    .faq-question-answer-wrapper:first-child .faq-question p{
+        font-size: 0.7em;
+    }
+    .faq-answer p{
+        font-size: 1em;
+        line-height: 1.2em;
+    }
+    #contact form{
+        display: none;
+    }
+    #contact .form-small{
+        display: block;
+    }
+    #contact .form-small a{
+        width: fit-content;
+        margin-top: 0;
+        text-decoration: none;
+    }
+    #news{
+        padding: 100px 10px;
+        box-sizing: border-box;
+        width: 100%;
+        height: fit-content;
+    }
+    .news-container{
+        padding: 20px 0;
+    }
+    #news a{
+        position: static;
+        margin: 20px auto;
+        display: block;
+        width: fit-content;
+    }
+    footer{
+        /* flex-wrap: wrap-reverse; */
+        flex-direction: column-reverse;
+        gap: 60px;
+    }
+}
+@media screen and (max-width:375px) {
+    nav ul{
+        gap: 10px;
+    }
+    nav ul li a{
+        font-size: 1em;
+    }
+    #ko-smo-mi #text-wrapper p{
+        font-size: 1.1em;
+        line-height: 1.2em;
+    }
+    #savet p{
+        font-size: 1.1em;
+        line-height: 1.2em;
+    }
+    .team-member-name{
+        font-size: 10vw;
+        margin-top: 20px;
+    }
+    .read-bio{
+        display: block;
+    }
+    .contact-info{
+        font-size: 1em;
+    }
+    .survey-question h3{
+        font-size: 1em;
+    }
+}
+@media screen and (min-width:376px) {
+    nav ul{
+        gap: 30px;
+    }
+    nav ul li a{
+        font-size: 1.3em;
+    }
+    #ko-smo-mi{
+        padding: 0 20px;
+    }
+    #ko-smo-mi #text-wrapper p{
+        font-size: 1.3em;
+        line-height: 1.5em;
+    }
+    #savet{
+        padding: 0 20px;
+    }
+    #savet p{
+        font-size: 1.3em;
+        line-height: 1.5em;
+    }
+    .team-member-name{
+        font-size: 8vw;
+        margin-top: 20px;
+    }
+    .read-bio{
+        display: block;
+    }
+    .contact-info{
+        font-size: 1.1em;
+    }
+    .contact-info .mail{
+        font-size: 1.3em;
+    }
+    .survey-question h3, .survey-answer h3{
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .survey-question button, .survey-answer a{
+        font-size: 1.3em;
+    }
+    .faq-question p{
+        font-size: 1.3em;
+    }
+    .faq-question-answer-wrapper:first-child .faq-question{
+        min-height: 90px;
+    }
+    .faq-question-answer-wrapper:first-child .faq-question p{
+        font-size: 1em;
+    }
+    .faq-answer{
+        box-sizing: border-box;
+        padding: 0 10px;
+    }
+    #contact .contact-info{
+        font-size: 1.5em;
+    }
+    #contact .form-small a{
+        font-size: 1.3em;
+    }
+}
+@media screen and (min-width: 450px){
+    .read-bio{
+        display: none;
+    }
+    .team-member{
+        margin-bottom: 50px;
+    }
+    .team-member-biography-text{
+        width: 100%;
+        font-size: 1.2em;
+        line-height: 1.4em;
+        display: block;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    .team-member-image-wrapper:hover .contact-info{
+        display: flex;
+        align-items: center!important;
+    }
+    .contact-info .contact-info-mail img{
+        height: 24px;
+        width: 24px;
+    }
+    button.contact-therapist{
+        display: block;
+    }
+    a.contact-therapist{
+        display: none;
+    }
+    #contact form{
+        display: block;
+        width: 100%;
+    }
+    #contact .form-small{
+        display: none;
+    }
+    .sender-info{
+        flex-direction: column;
+        gap:20px;
+    }
+    .sender-msg{
+        width: 100%;
+        margin-top: 40px;
+    }
+}
+@media screen and (min-width: 520px){
+    #hero header h1{
+        font-size: 11vw;
+    }
+    #hero header h3{
+        font-size: 4vw;
+    }
+    #about-picture{
+        width: 80%;
+        margin: 40px auto 0 auto;
+    }
+
+    #key-words h3{
+        font-size: 5vw;
+    }
+    .key-words-wrapper{
+        width: 90%;
+    }
+    .key-word h3{
+        font-size: 4vw!important;
+    }
+    .key-word{
+        width: 220px;
+        height: 200px;
+    }
+    .team-member-image-wrapper{
+        height: 600px;
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .team-member-image-wrapper img{
+        height: 100%;
+        width: auto;
+    }
+    .team-member-biography-text{
+        font-size: 1.3em;
+        line-height: 1.5em;
+    }
+    .faq-question-answer-wrapper:first-child .faq-question p{
+        font-size: 1.2em;
+    }
+    .faq-answer p {
+        font-size: 1.2em;
+        line-height: 1.4em;
+      }
+}
+@media screen and (min-width: 630px){
+    #key-words h3 {
+        font-size: 4vw;
+    }
+    .key-word h3 {
+        font-size: 3vw !important;
+    }
+    /* .team-member-image-wrapper{
+        width: 70%;
+    } */
+    .team-member{
+        margin-bottom: 50px;
+    }
+    .team-member-name {
+        font-size: 5vw;
+    }
+    .contact-info{
+        gap: 30px;
+    }
+    /* .contact-therapist{
+        margin-top: 20px;
+    } */
+    #faq-wrapper {
+        padding: 0 20px;
+    }
+
+}
+@media screen and (min-width: 768px){
+    #hero header h3 {
+        font-size: 3vw;
+    }
+    .key-words-wrapper{
+        width: 80%;
+    }
+    #key-words h3 {
+        font-size: 3vw;
+    }
+    .key-word h3 {
+        font-size: 2.5vw !important;
+    }
+    /* .team-member-image-wrapper{
+        width: 55%;
+    } */
+    .team-member-name {
+        font-size: 4vw;
+    }
+    .team-member-biography-text{
+        padding: 0 40px;
+    }
+    #faq-wrapper {
+        padding: 0 40px;
+    }
+}
+/* 870px sledece */
+@media screen and (min-width:870px) {
+    #hero header h1 {
+        font-size: 9vw;
+    }
+    #hero header h3 {
+        font-size: 2.5vw;
+    }
+    #ko-smo-mi{
+        padding: 0 50px;
+    }
+    #about-picture{
+        width: 60%;
+        height: 30vw;
+    }
+    .key-words-wrapper{
+        width: 90%;
+        flex-wrap: nowrap;
+    }
+    #savet{
+        padding: 0 50px;
+    }
+    /* .team-member-image-wrapper{
+        width: 50%;
+        height: 500px;
+    } */
+    /* .team-member-image-wrapper img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 0 10px;
+    } */
+    .contact-info .contact-therapist{
+        font-size: 1.3em;
+        font-weight: 300;
+    }
+}
+@media screen and (min-width: 992px) {
+    #ko-smo-mi{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        padding: 0;       
+    }
+    #text-wrapper{
+        width: 45%;
+    }
+    #about-picture{
+        width: 45%;
+        margin: 0;
+    }
+    .sender-info{
+        flex-direction: row;
+        gap: 50px;
+    }
+    footer{
+        flex-direction: row;
+    }
+}
+@media screen and (min-width:1024px) {
+    nav ul{
+        gap: 10px;
+        width: 55%;
+    }
+    nav ul li a{
+        font-size: 1em;
+    }
+    #hero header h1 {
+        font-size: 8vw;
+    }
+    #hero header h3 {
+        font-size: 2vw;
+    }
+    #ko-smo-mi{
+        width: 100%;
+        height: fit-content;
+    }
+    #ko-smo-mi #text-wrapper{
+        position: static;
+        width: 40%;
+        margin: 0;
+        padding: 0;
+    }
+    #ko-smo-mi #text-wrapper p{
+        width: 100%;
+    } 
+    #about-picture{
+        position: static;
+        width: 40%;
+    }
+    .team-member{
+        padding: 0 5%!important;
+    }
+    .team-member-biography-text{
+        padding: 0;
+    }
+    .team-member-biography-wrapper{
+        padding: 0 10px;
+    }
+    .contact-info .contact-therapist{
+        padding: 7px 4px;
+        font-size: 0.8em;
+    }
+    #faq-wrapper{
+        width: 80%;
+    }
+    #contact-wrapper .contact-info{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+}
+@media screen and (min-width:1200px) {
+    nav ul{
+        width: 45%;
+    }
+    #hero header h1{
+        font-size: 80px;
+    }
+    #hero header h3{
+        font-size: 1em;
+    }
+    #ko-smo-mi #text-wrapper{
+        width: 50%;
+    }
+    #ko-smo-mi #about-picture{
+        width: 30%;
+    }
+    #key-words h3, #key-words .key-word h3{
+        font-size: 24px !important;
+    }
+    .team-member{
+        padding: 0 10%!important;
+    }
+    .team-member .contact-info{
+        gap: 20px;
+        font-size: 1em;
+        align-items: start;
+    }
+    .team-member-right .contact-info{
+        align-items: end;
+    }
+    .team-member-biography-wrapper{
+        padding: 0;
+        align-items: end;
+    }
+    .team-member-right .team-member-biography-wrapper{
+        align-items: start;
+    }
+    .team-member-biography-text{
+        padding: 0;
+        font-size: 22px;
+        width: min(80%, 800px);
+        line-height: 1.5;
+    }
+    .team-member-name{
+        margin: 0;
+        font-size: 46px;
+    }
+}
+@media screen and (min-width:1440px) {
+    nav ul{
+        gap: 0;
+        width: 40%; 
+    }
+    #hero header h1{
+        font-size: 90px;
+        font-weight: 300;
+        color: var(--darkGreen);
+        letter-spacing: 5px;
+    }
+    #hero header h3{
+        margin-top: 20px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        color: var(--beige);
+        font-size: 20px;
+    }
+    #ko-smo-mi{
+        height: 400px;
+    }
+    #ko-smo-mi #text-wrapper{
+        width: 40%;
+        align-self: start !important;
+    }
+    #ko-smo-mi #text-wrapper p{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    #about-picture{
+        /* width: 20% !important; */
+        height: auto;
+        align-self: end;
+    }
+    #about-picture img{
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+    }
+    .key-words-wrapper{
+        width: 80%;
+    }
+    #savet p{
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    /* .team-member-biography-text{
+        width: 80%;
+        margin: 50px auto;
+        padding: 0;
+    } */
+    /* .contact-info{
+        color: var(--beige);
+        font-size: 16px;
+        font-weight: 300;
+    
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    
+        position: absolute;
+        /* bottom: 5%; 
+    
+    }
+    .contact-info .mail{
+        font-size: 18px;
+    } */
+    #faq-wrapper{
+        width: 50%;
+    }
+    #contact-wrapper .contact-info {
+        font-size: 16px;
+        font-weight: 300;
+    }
+    .sender-msg {
+        margin-top: 20px;
+    }
+}
+/* @media screen and (min-width:2000px) {
+    nav ul li a{
+        color: rebeccapurple;
+    }
+} */
