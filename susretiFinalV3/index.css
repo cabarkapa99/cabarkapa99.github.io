@@ -975,7 +975,7 @@ section{
     object-fit: cover;
 }
 .news-wrapper .news-image{
-    height: 40%;
+    height: 160px;
     width: 100%;
     background-color: lightgray;
     border-radius: 15px;
