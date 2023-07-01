@@ -408,7 +408,7 @@ function showLatestPost(){
     .then(data => {
         // Process the retrieved data
         naslov.innerText = data[0].title.rendered; 
-        text.innerText = data[0].excerpt.rendered.substring(data[1].excerpt.rendered.indexOf(">") + 1, data[1].excerpt.rendered.indexOf("&"));
+        text.innerText = data[0].excerpt.rendered.substring(data[0].excerpt.rendered.indexOf(">") + 1, data[0].excerpt.rendered.indexOf("&"));
         link = data[0].link;
         document.querySelector(".news-wrapper").addEventListener("click", ()=>{
             window.open(link, "_blank");
