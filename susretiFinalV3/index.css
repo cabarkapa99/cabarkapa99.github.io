@@ -938,7 +938,8 @@ section{
     border: 1px solid var(--rose);
 }
 .news-wrapper{
-    height: 400px;
+    min-height: 400px;
+    height: fit-content;
     width: 500px;
     /* border: 1px solid var(--beige); */
     border-radius: 20px;
@@ -986,12 +987,14 @@ section{
 }
 .news-wrapper h4{
     width: 100%;
-    height: 10%;
+    min-height: 10%;
+    height: fit-content;
     background-color: lightgray;
     border-radius: 10px;
 }
 .news-wrapper p{
-    height: 40%;
+    min-height: 40%;
+    height: fit-content;
     width: 100%;
     border-radius: 10px;
     background-color: lightgray;
