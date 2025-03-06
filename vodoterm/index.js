@@ -123,9 +123,9 @@ function showData(data){
     let entries = Object.entries(designData);
     contentWrapper.querySelector('.sifra p').innerText = entries[0][0] + ": " + entries[0][1];
     contentWrapper.querySelector('.naziv p').innerText = entries[1][0] + ": " + entries[1][1];
-    contentWrapper.querySelector('.cena p').innerText = entries[2][0] + ": " + entries[2][1] + " rsd";
+    contentWrapper.querySelector('.cena p').innerText = entries[2][0] + ": " + Number(entries[2][1]).toLocaleString('de-DE') + " rsd";
     if(popust.postoji){
-        document.querySelector('.popust-image-wrapper .novaCena p').innerText = "Nova cena: " + (entries[2][1] - (entries[2][1] * popust.procenat / 100)) + " rsd"; 
+        document.querySelector('.popust-image-wrapper .novaCena p').innerText = "Nova cena: " + (entries[2][1] - (entries[2][1] * popust.procenat / 100)).toLocaleString('de-DE') + " rsd"; 
     }
 }
 const dragFields = function(){
@@ -369,9 +369,9 @@ const showPreview = function(){
         contentWrapper.querySelector('.naziv').style.top = Style.naziv.top;
         contentWrapper.querySelector('.naziv').style.left = Style.naziv.left;
 
-        contentWrapper.querySelector('.cena p').innerText = entries[2][0] + ": " + entries[2][1] + " rsd";
+        contentWrapper.querySelector('.cena p').innerText = entries[2][0] + ": " + Number(entries[2][1]).toLocaleString('de-DE') + " rsd";
         if(popust.postoji){
-            slicica.querySelector('.novaCena p').innerText = "Nova cena: " + (entries[2][1] - (entries[2][1] * popust.procenat / 100)) + " rsd"; 
+            slicica.querySelector('.novaCena p').innerText = "Nova cena: " + (entries[2][1] - (entries[2][1] * popust.procenat / 100)).toLocaleString('de-DE') + " rsd"; 
             slicica.querySelector('.popust p').innerText = popust.procenat + "%";
 
             slicica.style.backgroundColor = Style.backGround;
